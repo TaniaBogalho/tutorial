@@ -1,3 +1,5 @@
+package com.exemplo;
+
 public class Track {
 
 	String title;
