@@ -15,18 +15,17 @@
       <scope>test</scope>
     </dependency>
 	
-	<dependency>
-		<groupId>com.sun.jersey</groupId>
-		<artifactId>jersey-server</artifactId>
-		<version>1.8</version>
-	</dependency>
+    <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-server</artifactId>
+      <version>1.8</version>
+    </dependency>
 
-	<dependency>
-		<groupId>com.sun.jersey</groupId>
-		<artifactId>jersey-json</artifactId>
-		<version>1.8</version>
-	</dependency>
-	
+    <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-json</artifactId>
+      <version>1.8</version>
+    </dependency>	
   </dependencies>
   
   <properties>
@@ -43,20 +42,15 @@
 			<version>9.2.21.v20170120</version>
 		</plugin>
 		<plugin>
-            		<groupId>com.spotify</groupId>
-            		<artifactId>docker-maven-plugin</artifactId>
-            		<version>0.2.3</version>
-            		<configuration>
-                		<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                		<dockerDirectory>src/main/docker</dockerDirectory>
-                		<resources>
-                    			<resource>
-                        			<targetPath>/</targetPath>
-                        			<directory>${project.build.directory}</directory>
-                        			<include>${project.build.finalName}.jar</include>
-                    			</resource>
-                		</resources>
-            		</configuration>
+		         <groupId>com.spotify</groupId>
+		         <artifactId>dockerfile-maven-plugin</artifactId>
+		         <version>1.3.6</version>
+		         <configuration>
+			 <repository>${docker.image.prefix}/${project.artifactId}</repository>
+			 <buildArgs>
+			    <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+			 </buildArgs>
+		     </configuration>
         	</plugin>
 	</plugins>
 	
