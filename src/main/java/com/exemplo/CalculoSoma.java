@@ -18,13 +18,16 @@ public class CalculoSoma {
 		return num2;
 	}
 
-	public void setNum1(int num2) {
+	public void setNum2(int num2) {
 		this.num2 = num2;
 	}
 
-	@Override
 	public String calcula() {
     		total = this.num1 + this.num2;
+	}
+	
+	@Override
+	public String toString() {
  
 		//return "Track [title=" + title + ", singer=" + singer + "]";
     		//return "CalculoSoma [" + num1 + " + " + num2 + " = " + total + "]";
