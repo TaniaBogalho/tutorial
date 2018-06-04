@@ -1,6 +1,6 @@
 package com.exemplo;
 
-public class Calculo {
+public class CalculoSoma {
 
 	float num1;
 	float num2;
