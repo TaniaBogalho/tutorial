@@ -25,8 +25,7 @@ public class CalculoSoma {
 	//@Override
 	public String calcula() {
     		total = this.num1 + this.num2;
-  
-
+ 
 		//return "Track [title=" + title + ", singer=" + singer + "]";
     		//return "CalculoSoma [" + num1 + " + " + num2 + " = " + total + "]";
 		return "CalculoSoma [ num1=" + num1 + ", num2=" + num2 + ", total=" + total + "]";
