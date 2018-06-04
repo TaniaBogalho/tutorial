@@ -2,23 +2,23 @@ package com.exemplo;
 
 public class CalculoSoma {
 
-	Int num1;
-	Int num2;
-	Int total;
+	int num1;
+	int num2;
+	int total;
 
-	public Int getNum1() {
+	public int getNum1() {
 		return num1;
 	}
 
-	public void setNum1(Int num1) {
+	public void setNum1(int num1) {
 		this.num1 = num1;
 	}
   
-	public Int getNum2() {
+	public int getNum2() {
 		return num2;
 	}
 
-	public void setNum1(Int num2) {
+	public void setNum1(int num2) {
 		this.num2 = num2;
 	}
 
