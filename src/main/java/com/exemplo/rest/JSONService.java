@@ -43,8 +43,8 @@ public class JSONService {
 	public Track getTrackInJSON() {
 
 		CalculoSoma soma = new CalculoSoma();
-		soma.setNum1("Enter Sandman");
-		soma.setNum2("Metallica");
+		soma.setNum1("2");
+		soma.setNum2("2");
 
 		return soma;
 
