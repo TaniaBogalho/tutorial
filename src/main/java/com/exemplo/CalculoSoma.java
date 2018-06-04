@@ -22,12 +22,12 @@ public class CalculoSoma {
 		this.num2 = num2;
 	}
 
-	public String calcula() {
+	public int calcula() {
     		total = this.num1 + this.num2;
 	}
 	
 	@Override
-	public String toString() {
+	public string toString() {
  
 		//return "Track [title=" + title + ", singer=" + singer + "]";
     		//return "CalculoSoma [" + num1 + " + " + num2 + " = " + total + "]";
