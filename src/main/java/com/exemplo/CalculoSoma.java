@@ -25,8 +25,8 @@ public class Calculo {
 	public String soma() {
     		float total = num1 + num2;
   
-		//return "Soma [num1=" + num1 + ", num2=" + num2 + "]";
-    		return "[" + num1 + ", "+", " + num2 + ", " = " + total]";
+		//return "Track [title=" + title + ", singer=" + singer + "]";
+    		return "[num1=" + num1 + " + num2=" + num2 + " = " + total]";
 	}
 
 }
