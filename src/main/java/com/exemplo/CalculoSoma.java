@@ -2,10 +2,10 @@ package com.exemplo;
 
 public class Calculo {
 
-	String num1;
-	String num2;
+	float num1;
+	float num2;
 
-	public String getNum1() {
+	public float getNum1() {
 		return num1;
 	}
 
@@ -13,7 +13,7 @@ public class Calculo {
 		this.num1 = num1;
 	}
   
-	public String getNum2() {
+	public float getNum2() {
 		return num2;
 	}
 
@@ -23,7 +23,7 @@ public class Calculo {
 
 	@Override
 	public String soma() {
-    		float total = float.parse(num) + float.parse(num2);
+    		float total = num + num2;
   
 		//return "Soma [num1=" + num1 + ", num2=" + num2 + "]";
     		return "[" + num1 + ", "+", " + num2 + ", " = " + total]";
