@@ -23,10 +23,10 @@ public class Calculo {
 
 	@Override
 	public String soma() {
-    float total = float.parse(num) + float.parse(num2);
+    		float total = float.parse(num) + float.parse(num2);
   
 		//return "Soma [num1=" + num1 + ", num2=" + num2 + "]";
-    return "[" + num1 + ", "+", " + num2 + ", " = " + total]";
+    		return "[" + num1 + ", "+", " + num2 + ", " = " + total]";
 	}
 
 }
