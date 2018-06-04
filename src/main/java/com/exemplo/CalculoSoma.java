@@ -22,7 +22,7 @@ public class CalculoSoma {
 		this.num2 = num2;
 	}
 
-	//@Override
+	@Override
 	public String calcula() {
     		total = this.num1 + this.num2;
  
