@@ -9,7 +9,7 @@ public class CalculoSoma {
 		return num1;
 	}
 
-	public void setNum1(String num1) {
+	public void setNum1(float num1) {
 		this.num1 = num1;
 	}
   
@@ -17,7 +17,7 @@ public class CalculoSoma {
 		return num2;
 	}
 
-	public void setNum1(String num2) {
+	public void setNum1(float num2) {
 		this.num2 = num2;
 	}
 
