@@ -22,11 +22,11 @@ public class CalculoSoma {
 	}
 
 	@Override
-	public String soma() {
+	public String toString() {
     		float total = num1 + num2;
   
 		//return "Track [title=" + title + ", singer=" + singer + "]";
-    		return "[num1=" + num1 + " + num2=" + num2 + " = " + total]";
+    		return "CalculoSoma [num1=" + num1 + " + num2=" + num2 + " = " + total]";
 	}
 
 }
