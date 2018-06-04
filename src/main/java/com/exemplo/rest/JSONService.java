@@ -38,7 +38,7 @@ public class JSONService {
 		
 	}*/
 	
-	@Path("/get")
+	@Path("/soma/:num1/:num2")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Track getTrackInJSON() {
 
