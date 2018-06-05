@@ -44,9 +44,12 @@ public class JSONService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public CalculoSoma getSomaInJSON() {
 
+		@PathParam("num1") int num1;
+		@PathParam("num2") int num2;
+		
 		CalculoSoma soma = new CalculoSoma();
-		soma.setNum1(@PathParam("num1"));
-		soma.setNum2(@PathParam("num2"));
+		soma.setNum1(num1);
+		soma.setNum2(num2);
 
 		soma.calcula();
 		
