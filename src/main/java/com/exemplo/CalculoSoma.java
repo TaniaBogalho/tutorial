@@ -22,10 +22,10 @@ public class CalculoSoma {
 		this.num2 = num2;
 	}
 
-	public int calcula() {
+	public void calcula() {
     		total = this.num1 + this.num2;
 		
-		return total;
+		//return total;
 	}
 	
 	@Override
