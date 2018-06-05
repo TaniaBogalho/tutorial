@@ -41,11 +41,11 @@ public class JSONService {
 	@GET
 	@Path("/soma/{num1}/{num2}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public CalculoSoma getTrackInJSON() {
+	public CalculoSoma getSomaInJSON() {
 
 		CalculoSoma soma = new CalculoSoma();
-		soma.setNum1(num1);
-		soma.setNum2(num2);
+		soma.setNum1(@PathParam("num1"));
+		soma.setNum2(@PathParam("num2"));
 
 		soma.calcula();
 		
