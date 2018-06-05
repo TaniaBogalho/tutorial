@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response;
 import com.exemplo.CalculoSoma;
 
 //@Path("/json/metallica")
-@Path("/json/")
+@Path("/json")
 public class JSONService {
 
 	/*@GET
