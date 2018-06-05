@@ -39,7 +39,7 @@ public class JSONService {
 		
 	}*/
 	
-	/*@GET
+	@GET
 	@Path("/soma/{num1}/{num2}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public CalculoSoma getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2) 
@@ -50,10 +50,14 @@ public class JSONService {
 
 		soma.calcula();
 		
+		//int total = num1 + num2;
+		
+		//String out = "Total = " + total; 
+		
 		return soma;
-	}*/
+	}
 	
-	@GET
+	/*@GET
 	@Path("/soma/{num1}/{num2}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2) 
@@ -67,6 +71,6 @@ public class JSONService {
 		String out = "Total = " + total; 
 		
 		return Response.status(200).entity(out).build();
-	}
+	}*/
 	
 }
