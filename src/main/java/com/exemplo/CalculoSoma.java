@@ -24,6 +24,8 @@ public class CalculoSoma {
 
 	public int calcula() {
     		total = this.num1 + this.num2;
+		
+		return total;
 	}
 	
 	@Override
