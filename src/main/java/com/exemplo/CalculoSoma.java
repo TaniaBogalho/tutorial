@@ -27,7 +27,7 @@ public class CalculoSoma {
 	}
 	
 	@Override
-	public string toString() {
+	public String toString() {
  
 		//return "Track [title=" + title + ", singer=" + singer + "]";
     		//return "CalculoSoma [" + num1 + " + " + num2 + " = " + total + "]";
