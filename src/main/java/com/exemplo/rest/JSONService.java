@@ -10,13 +10,13 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.exemplo.Track;
-//import com.exemplo.CalculoSoma;
+import com.exemplo.CalculoSoma;
 
-@Path("/json/metallica")
-//@Path("/json")
+//@Path("/json/metallica")
+@Path("/json")
 public class JSONService {
 
-	@GET
+	/*@GET
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Track getTrackInJSON() {
@@ -37,9 +37,9 @@ public class JSONService {
 		String result = "Track saved : " + track;
 		return Response.status(201).entity(result).build();
 		
-	}
+	}*/
 	
-	/*@GET
+	@GET
 	@Path("/soma/{num1}/{num2}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public CalculoSoma getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2) 
@@ -55,7 +55,7 @@ public class JSONService {
 		//String out = "Total = " + total; 
 		
 		return soma;
-	}*/
+	}
 	
 	/*@GET
 	@Path("/soma/{num1}/{num2}")
