@@ -42,35 +42,15 @@ public class JSONService {
 	@GET
 	@Path("/soma/{num1}/{num2}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public CalculoSoma getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2) 
+	public int getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2)
 	{		
 		CalculoSoma soma = new CalculoSoma();
 		soma.setNum1(num1);
 		soma.setNum2(num2);
 
-		soma.calcula();
-		
-		//int total = num1 + num2;
-		
-		//String out = "Total = " + total; 
-		
-		return soma;
+		int total = soma.calcula(num1, num2);
+
+		return total;
 	}
-	
-	/*@GET
-	@Path("/soma/{num1}/{num2}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response getSomaInJSON(@PathParam("num1") int num1, @PathParam("num2") int num2) 
-	{		
-		CalculoSoma soma = new CalculoSoma();
-		soma.setNum1(num1);
-		soma.setNum2(num2);
-
-		int total = num1 + num2;
-		
-		String out = "Total = " + total; 
-		
-		return Response.status(200).entity(out).build();
-	}*/
 	
 }
