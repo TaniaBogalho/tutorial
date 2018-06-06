@@ -22,18 +22,17 @@ public class CalculoSoma {
 		this.num2 = num2;
 	}
 
-	public void calcula() {
-    		total = this.num1 + this.num2;
-		
-		//return total;
+	public int calcula(int num1 , int num2) {
+    		this.total = num1 + num2;
+
+    		return this.total;
 	}
 	
 	@Override
-	public String toString() {
- 
-		//return "Track [title=" + title + ", singer=" + singer + "]";
-    		//return "CalculoSoma [" + num1 + " + " + num2 + " = " + total + "]";
-		return "CalculoSoma [ num1=" + num1 + ", num2=" + num2 + ", total=" + total + "]";
+	public String toString()
+	{
+		//return "CalculoSoma [num1=" + num1 + ", num2=" + num2 + ", total=" + total + "]";
+		return "CalculoSoma [total=" + total + "]";
 	}
 
 }
